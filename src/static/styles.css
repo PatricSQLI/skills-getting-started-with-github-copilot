@@ -158,16 +158,33 @@ footer {
 }
 
 .participants-list {
-  margin: 8px 0 0 18px;
+  margin: 8px 0 0 0;
   padding: 0;
-  list-style: disc;
+  list-style: none;
 }
 
 .participants-list li {
-  padding: 4px 0;
+  padding: 6px 0;
   color: #444;
   font-size: 14px;
-  display: list-item;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.delete-btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(198,40,40,0.08);
 }
 
 .participant-badge {
